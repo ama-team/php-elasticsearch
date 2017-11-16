@@ -10,6 +10,8 @@ This repository is dedicated to bunch of support utilities for
 [ElasticSearch][]: type mapping, automated type mapping, automated type
 mapping migration and so on.
 
+At current moment, everything is aimed only for ES 6.0+ compatibility. 
+
 ## Usage
 
 TBD
