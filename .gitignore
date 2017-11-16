@@ -5,3 +5,6 @@
 /bin
 /vendor
 /composer.lock
+
+# Playground
+/tmp
