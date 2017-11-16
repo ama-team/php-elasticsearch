@@ -1,0 +1,19 @@
+{
+  "name": "ama-team/elasticsearch",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Etki",
+      "email": "etki@etki.me"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "AmaTeam\\ElasticSearch\\": "src/"
+    }
+  },
+  "config": {
+    "bin-dir": "bin"
+  }
+}

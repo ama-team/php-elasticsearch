@@ -1,0 +1,7 @@
+# IDE files
+.idea
+
+# Composer leftovers
+/bin
+/vendor
+/composer.lock
