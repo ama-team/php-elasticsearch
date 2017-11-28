@@ -91,8 +91,8 @@ class Operations
         }
         if (!empty($mapping->getProperties())) {
             $properties = [];
-            foreach ($mapping->getProperties() as $property => $mapping) {
-                $properties[$property] = static::toArray($mapping);
+            foreach ($mapping->getProperties() as $name => $property) {
+                $properties[$name] = static::toArray($property);
             }
             $target[self::KEY_PROPERTIES] = $properties;
         }
