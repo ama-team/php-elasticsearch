@@ -17,7 +17,7 @@ interface IndexingInterface
      * @return string[]
      */
     public function getWriteIndices(): array;
-    public function getType(): string;
+    public function getType(): ?string;
     public function getOptions(): array;
     public function getAnalysis(): AnalysisInterface;
 }

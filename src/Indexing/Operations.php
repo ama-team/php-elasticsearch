@@ -27,7 +27,9 @@ class Operations
         $analysis = new Analysis();
         $target = (new Indexing())->setAnalysis($analysis);
         foreach ($indexings as $source) {
-            $target->setType($source->getType());
+            if ($source->getType()) {
+                $target->setType($source->getType());
+            }
             if (!empty($source->getReadIndices())) {
                 $target->setReadIndices($source->getReadIndices());
             }

@@ -74,7 +74,7 @@ class Indexing implements IndexingInterface
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
