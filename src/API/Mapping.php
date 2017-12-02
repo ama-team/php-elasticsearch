@@ -2,17 +2,25 @@
 
 namespace AmaTeam\ElasticSearch\API;
 
+use JMS\Serializer\Annotation as Serializer;
+
 class Mapping implements MappingInterface
 {
     /**
+     * @Serializer\Type("string")
+     *
      * @var string
      */
     private $type;
     /**
+     * @Serializer\Type("array")
+     *
      * @var array
      */
     private $parameters = [];
     /**
+     * @Serializer\Type("array<string, AmaTeam\ElasticSearch\API\Mapping>")
+     *
      * @var MappingInterface[]
      */
     private $properties = [];

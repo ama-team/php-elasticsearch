@@ -6,26 +6,37 @@ namespace AmaTeam\ElasticSearch\API;
 
 use AmaTeam\ElasticSearch\API\Indexing\Analysis;
 use AmaTeam\ElasticSearch\API\Indexing\AnalysisInterface;
+use JMS\Serializer\Annotation as Serializer;
 
 class Indexing implements IndexingInterface
 {
     /**
+     * @Serializer\Type("array<string>")
+     *
      * @var string[]
      */
     private $readIndices = [];
     /**
+     * @Serializer\Type("array<string>")
+     *
      * @var string[]
      */
     private $writeIndices = [];
     /**
+     * @Serializer\Type("string")
+     *
      * @var string
      */
     private $type;
     /**
+     * @Serializer\Type("array")
+     *
      * @var array
      */
     private $options = [];
     /**
+     * @Serializer\Type("AmaTeam\ElasticSearch\API\Indexing\Analysis")
+     *
      * @var AnalysisInterface
      */
     private $analysis;

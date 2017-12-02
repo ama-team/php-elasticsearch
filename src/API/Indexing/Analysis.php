@@ -6,22 +6,31 @@ use AmaTeam\ElasticSearch\API\Indexing\Analysis\AnalyzerInterface;
 use AmaTeam\ElasticSearch\API\Indexing\Analysis\CharacterFilterInterface;
 use AmaTeam\ElasticSearch\API\Indexing\Analysis\TokenFilterInterface;
 use AmaTeam\ElasticSearch\API\Indexing\Analysis\TokenizerInterface;
+use JMS\Serializer\Annotation as Serializer;
 
 class Analysis implements AnalysisInterface
 {
     /**
+     * @Serializer\Type("array")
+     *
      * @var AnalyzerInterface[]
      */
     private $analyzers = [];
     /**
+     * @Serializer\Type("array")
+     *
      * @var CharacterFilterInterface[]
      */
     private $characterFilters = [];
     /**
+     * @Serializer\Type("array")
+     *
      * @var TokenizerInterface[]
      */
     private $tokenizers = [];
     /**
+     * @Serializer\Type("array")
+     *
      * @var TokenFilterInterface[]
      */
     private $tokenFilters = [];
